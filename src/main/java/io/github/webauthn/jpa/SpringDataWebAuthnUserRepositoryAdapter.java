@@ -48,6 +48,8 @@ public class SpringDataWebAuthnUserRepositoryAdapter implements WebAuthnUserRepo
     public JpaWebAuthnUser newUser(RegistrationStartRequest startRequest) {
         JpaWebAuthnUser u = new JpaWebAuthnUser();
         u.setUsername(startRequest.getUsername());
+        u.setFirstName(startRequest.getFirstName());
+        u.setLastName(startRequest.getLastName());
         return u;
     }
 }

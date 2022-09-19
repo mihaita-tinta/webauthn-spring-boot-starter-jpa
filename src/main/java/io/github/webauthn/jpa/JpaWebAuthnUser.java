@@ -18,6 +18,8 @@ public class JpaWebAuthnUser implements UserDetails, WebAuthnUser {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
     private String username;
+    private String firstName;
+    private String lastName;
     private boolean enabled;
     private byte[] recoveryToken;
     private byte[] addToken;
@@ -104,6 +106,26 @@ public class JpaWebAuthnUser implements UserDetails, WebAuthnUser {
     @Override
     public void setRegistrationAddStart(LocalDateTime registrationAddStart) {
         this.registrationAddStart = registrationAddStart;
+    }
+
+    @Override
+    public String getFirstName() {
+        return firstName;
+    }
+
+    @Override
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
+    }
+
+    @Override
+    public String getLastName() {
+        return lastName;
+    }
+
+    @Override
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
     }
 
     @Override
