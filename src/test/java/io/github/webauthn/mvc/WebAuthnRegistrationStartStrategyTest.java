@@ -1,4 +1,4 @@
-package io.github.webauthn.jpa;
+package io.github.webauthn.mvc;
 
 
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -8,6 +8,8 @@ import io.github.webauthn.WebAuthnSpringDataAutoConfiguration;
 import io.github.webauthn.domain.WebAuthnCredentialsRepository;
 import io.github.webauthn.domain.WebAuthnUserRepository;
 import io.github.webauthn.dto.RegistrationStartRequest;
+import io.github.webauthn.jpa.JpaWebAuthnCredentials;
+import io.github.webauthn.jpa.JpaWebAuthnUser;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;

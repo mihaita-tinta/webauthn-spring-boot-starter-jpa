@@ -1,5 +1,6 @@
 package io.github.webauthn.jpa;
 
+import io.github.webauthn.domain.WebAuthnUserRepository;
 import org.junit.jupiter.api.Test;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
